@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-google-spreadsheet.gemspec
+- gem install sensu-plugins-google-spreadsheet-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: HSDVCf84CU+ccQG6MfqsZxwmMgKzopQ9o8FQjxPJ/OqlB9GQBT6kwQKiku9U8+oEuiX57fyygAnktIIUJ14nLSVDg6vx3AWJVQTescdtCaE3G1dK9fGZYMZylzLZBiF7LQDA/sUZ3DoODYyW4+kemY5sc/jKnBhYogfDYwklo3M=
+  gem: sensu-plugins-google-spreadsheet
+  on:
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-google-spreadsheet

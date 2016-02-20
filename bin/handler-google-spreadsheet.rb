@@ -58,7 +58,7 @@ class GAS < Sensu::Handler
     command: 'check_command',
     occurrences: 'occurrences',
     flapping: 'check_flapping'
-  }
+  }.freeze
 
   def handle
     timeout(5) do

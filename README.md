@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-google-spreadsheet/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-google-spreadsheet)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-google-spreadsheet/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-google-spreadsheet)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-google-spreadsheet.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-google-spreadsheet)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-google-spreadsheet](https://codeship.com/projects/9904ed80-ea32-0132-7a33-32dfa18a9fce/status?branch=master)](https://codeship.com/projects/83076)
 
 ## Functionality
 
