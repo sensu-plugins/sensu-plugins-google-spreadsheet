@@ -18,7 +18,7 @@ notifications:
 script:
 - bundle exec rake default
 - gem build sensu-plugins-google-spreadsheet.gemspec
-- gem install sensu-plugins-google-spreadsheet-*.gem
+- gem install sensu-plugins-google-spreadsheets-*.gem
 deploy:
   provider: rubygems
   api_key:
