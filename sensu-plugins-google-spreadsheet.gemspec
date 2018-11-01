@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsGoogleSpreadsheet::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
-  s.add_runtime_dependency 'google_drive', '1.0.1'
+  s.add_runtime_dependency 'google_drive', '= 2.1.12'
   s.add_runtime_dependency 'nokogiri', '= 1.6.8.1'
   s.add_runtime_dependency 'rack', '= 1.6.8'
 
