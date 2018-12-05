@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsGoogleSpreadsheet::Version::VER_STRING
 
-  s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
+  s.add_runtime_dependency 'sensu-plugin', '>= 1.2', '< 4.0'
   s.add_runtime_dependency 'google_drive', '1.0.1'
   s.add_runtime_dependency 'nokogiri', '= 1.6.8.1'
   s.add_runtime_dependency 'rack', '= 1.6.8'
