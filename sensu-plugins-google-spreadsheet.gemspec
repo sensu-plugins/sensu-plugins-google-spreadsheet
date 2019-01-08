@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
   s.add_runtime_dependency 'google_drive', '1.0.1'
   s.add_runtime_dependency 'nokogiri', '= 1.6.8.1'
-  s.add_runtime_dependency 'rack', '= 1.6.8'
+  s.add_runtime_dependency 'rack', '= 1.6.11'
 
   s.add_development_dependency 'bundler',                   '~> 1.7'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 1.0'
